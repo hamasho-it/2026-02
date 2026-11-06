@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社中・時間・座席選択 - カグチカ！</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <a href="./seat_select_datetime.html" class="header-back">戻る</a>
+            <h1>社中・時間・座席選択</h1>
+        </header>
+        <main>
+            <div class="form-group">
+                <label>出演社中</label>
+                <select class="form-control">
+                    <option>サンプル社中</option>
+                    <option>神楽社中A</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>座席種別・料金</label>
+                <select class="form-control">
+                    <option>S席 (前方中央): 2,000円</option>
+                    <option>指定席: 1,000円</option>
+                </select>
+            </div>
+            <div class="card">
+                <div class="card-title">座席配置イメージ</div>
+                <div class="img-box">
+                    <img src="./images/seat_map_sample.png" alt="座席マップ">
+                </div>
+            </div>
+            <div class="btn-group">
+                <a href="./seat_complete.html" class="btn">選択</a>
+                <a href="./seat_select_datetime.html" class="btn btn-outline">戻る</a>
+            </div>
+        </main>
+        <footer>© カグチカ！ Project</footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI解説 演目・社中選択 - カグチカ！</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <a href="./index.html" class="header-back">戻る</a>
+            <h1>AI解説 演目・社中選択</h1>
+        </header>
+        <main>
+            <div class="card">
+                <div class="card-title">リアルタイム解説機能</div>
+                <p style="font-size:12px; color:#666;">カメラをステージにかざすと、AIが現在演じられている場面や登場人物をリアルタイムで音声・テキスト解説します。</p>
+            </div>
+            <div class="form-group">
+                <label>観賞する演目</label>
+                <select class="form-control">
+                    <option>大蛇（架空版）</option>
+                    <option>神剣（サンプル演目）</option>
+                    <option>鬼退治（仮）</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>演舞社中</label>
+                <select class="form-control">
+                    <option>サンプル社中</option>
+                    <option>神楽社中A</option>
+                </select>
+            </div>
+            <div class="btn-group" style="margin-top:20px;">
+                <a href="./ai_camera.html" class="btn">選ぶ</a>
+                <a href="./index.html" class="btn btn-outline">戻る</a>
+            </div>
+        </main>
+        <footer>© カグチカ！ Project</footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

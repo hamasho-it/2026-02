@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG アイテム選択 - カグチカ！</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <a href="./rpg_battle.html" class="header-back">戻る</a>
+            <h1>アイテム選択</h1>
+        </header>
+        <main>
+            <div style="display:flex; justify-content:space-between; font-size:12px; padding:4px 0;">
+                <span>自キャラ HP: 80%</span>
+                <span>敵キャラ HP: 60%</span>
+            </div>
+            <div class="card">
+                <div class="card-title">所持アイテム一覧</div>
+                <div class="form-group">
+                    <label><input type="radio" name="item" checked> 薬草 (HPを50回復)</label>
+                </div>
+                <div class="form-group">
+                    <label><input type="radio" name="item"> 神酒 (1ターン攻撃力UP)</label>
+                </div>
+            </div>
+            <div class="btn-group">
+                <a href="./rpg_battle.html" class="btn">使う</a>
+                <a href="./rpg_battle.html" class="btn btn-outline">戻るボタン</a>
+            </div>
+        </main>
+        <footer>© カグチカ！ Project</footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

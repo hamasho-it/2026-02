@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漫画表示 - カグチカ！</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <a href="./manga_select.html" class="header-back">戻る</a>
+            <h1>第1話 大蛇誕生の巻</h1>
+        </header>
+        <main>
+            <div class="toggle-group" style="padding:4px 0;">
+                <span style="font-size:12px;">効果音/音声</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="img-box">
+                <img src="./images/manga_01.png" alt="四コマ漫画">
+            </div>
+            <div class="btn-group">
+                <a href="./manga_comment.html" class="btn">移動</a>
+                <a href="./manga_select.html" class="btn btn-secondary">選択画面に戻る</a>
+                <a href="./index.html" class="btn btn-outline">ホームに戻る</a>
+            </div>
+        </main>
+        <footer>© カグチカ！ Project</footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

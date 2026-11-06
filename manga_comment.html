@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コメント・評価 - カグチカ！</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <a href="./manga_select.html" class="header-back">戻る</a>
+            <h1>コメント・評価</h1>
+        </header>
+        <main>
+            <div class="card">
+                <div class="card-title">作品評価</div>
+                <div style="font-size:18px; color:#333;">★★★★★ <span style="font-size:13px; color:#666;">(5.0 / 評点32件)</span></div>
+            </div>
+            <form id="comment-form">
+                <div class="form-group">
+                    <label>コメントを投稿</label>
+                    <input type="text" id="comment-input" class="form-control" placeholder="感想を入力してください">
+                </div>
+                <button type="submit" class="btn" style="margin-bottom:12px;">書き込む</button>
+            </form>
+            <div class="card-title">みんなのコメント</div>
+            <div id="comment-list">
+                <div class="card" style="margin-bottom:8px;">
+                    <strong>神楽ファンA</strong> <span style="font-size:11px; color:#888;">202X-XX-XX</span>
+                    <p style="font-size:13px; margin-top:4px;">大蛇の演目が楽しみです！マンガで予習できてわかりやすい！</p>
+                </div>
+            </div>
+            <div class="btn-group" style="margin-top:10px;">
+                <a href="./manga_select.html" class="btn btn-secondary">選択画面に戻る</a>
+            </div>
+        </main>
+        <footer>© カグチカ！ Project</footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
