@@ -9,21 +9,26 @@
 <body>
     <div class="app-container">
         <header>
-            <a href="./rpg_battle.html" class="header-back">戻る</a>
-            <h1>アイテム選択</h1>
+            <h1>アイテム画面</h1>
         </header>
         <main>
-            <div style="display:flex; justify-content:space-between; font-size:12px; padding:4px 0;">
-                <span>自キャラ HP: 80%</span>
-                <span>敵キャラ HP: 60%</span>
+            <div style="display:flex; gap:10px;">
+                <div style="flex:1; text-align:center;">
+                    <div style="font-size:11px; font-weight:bold;">自キャラクター</div>
+                    <div class="hp-bar-container"><div class="hp-bar" style="width:80%;"></div></div>
+                </div>
+                <div style="flex:1; text-align:center;">
+                    <div style="font-size:11px; font-weight:bold;">敵キャラクター</div>
+                    <div class="hp-bar-container"><div class="hp-bar" style="width:60%; background:#888;"></div></div>
+                </div>
             </div>
             <div class="card">
-                <div class="card-title">所持アイテム一覧</div>
+                <div class="card-title">アイテム選択</div>
                 <div class="form-group">
-                    <label><input type="radio" name="item" checked> 薬草 (HPを50回復)</label>
+                    <label><input type="radio" name="item" checked> 薬草 (HP回復)</label>
                 </div>
                 <div class="form-group">
-                    <label><input type="radio" name="item"> 神酒 (1ターン攻撃力UP)</label>
+                    <label><input type="radio" name="item"> 毒消し (状態異常回復)</label>
                 </div>
             </div>
             <div class="btn-group">
@@ -32,6 +37,44 @@
             </div>
         </main>
         <footer>© カグチカ！ Project</footer>
+<!-- モンスト風下部ナビゲーションバー (親指操作・AI解説明記) -->
+        <nav class="bottom-nav">
+            
+            <a href="./index.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🏠</span>
+                <span>ホーム</span>
+            </a>
+            <a href="./seat_reservation.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎟️</span>
+                <span>座席予約</span>
+            </a>
+            <a href="./ai_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">💡</span>
+                <span>AI解説</span>
+            </a>
+            <a href="./video_list.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📺</span>
+                <span>動画</span>
+            </a>
+            <a href="./manga_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📖</span>
+                <span>漫画</span>
+            </a>
+            <a href="./gacha_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎰</span>
+                <span>ガチャ</span>
+            </a>
+            <a href="./rpg_top.html" class="bottom-nav-item active">
+                <span class="bottom-nav-icon">⚔️</span>
+                <span>RPG</span>
+            </a>
+            <a href="./setting.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">⚙️</span>
+                <span>設定</span>
+            </a>
+        </nav>
+
+
     </div>
     <script src="./script.js"></script>
 </body>

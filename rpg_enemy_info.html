@@ -9,19 +9,27 @@
 <body>
     <div class="app-container">
         <header>
-            <a href="./rpg_battle.html" class="header-back">戻る</a>
-            <h1>敵情報詳細</h1>
+            <h1>敵情報画面</h1>
         </header>
         <main>
-            <div class="img-box" style="height:160px;">
-                <img src="./images/rpg_enemy.png" alt="敵キャラグラフィック">
+            <div style="display:flex; gap:10px;">
+                <div style="flex:1; text-align:center;">
+                    <div style="font-size:11px; font-weight:bold;">自キャラクター</div>
+                    <div class="hp-bar-container"><div class="hp-bar" style="width:80%;"></div></div>
+                </div>
+                <div style="flex:1; text-align:center;">
+                    <div style="font-size:11px; font-weight:bold;">敵キャラクター</div>
+                    <div class="hp-bar-container"><div class="hp-bar" style="width:60%; background:#888;"></div></div>
+                </div>
+            </div>
+            <div class="img-box" style="height:140px;">
+                <img src="./images/rpg_enemy.png" alt="敵キャラクター">
             </div>
             <div class="card">
-                <div class="card-title">八岐大蛇（ヤマタノオロチ）</div>
-                <p style="font-size:12px; margin-bottom:6px;">体力：</p>
-                <div class="hp-bar-container"><div class="hp-bar" style="width:60%;"></div></div>
-                <p style="font-size:12px; color:#555; margin-top:8px; line-height:1.5;">
-                    8つの頭と8つの尾を持つ巨大な蛇の怪物。強い酒を好む習性がある。強力な全体攻撃を繰り出してくる。
+                <div class="card-title">敵の情報（八岐大蛇）</div>
+                <p style="font-size: 16px; color:#555; line-height:1.5;">
+                    敵の情報を知れる。<br>
+                    8つの頭を持つ大蛇。強い酒を飲むと酔い潰れて隙ができる。
                 </p>
             </div>
             <div class="btn-group">
@@ -29,6 +37,44 @@
             </div>
         </main>
         <footer>© カグチカ！ Project</footer>
+<!-- モンスト風下部ナビゲーションバー (親指操作・AI解説明記) -->
+        <nav class="bottom-nav">
+            
+            <a href="./index.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🏠</span>
+                <span>ホーム</span>
+            </a>
+            <a href="./seat_reservation.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎟️</span>
+                <span>座席予約</span>
+            </a>
+            <a href="./ai_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">💡</span>
+                <span>AI解説</span>
+            </a>
+            <a href="./video_list.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📺</span>
+                <span>動画</span>
+            </a>
+            <a href="./manga_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📖</span>
+                <span>漫画</span>
+            </a>
+            <a href="./gacha_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎰</span>
+                <span>ガチャ</span>
+            </a>
+            <a href="./rpg_top.html" class="bottom-nav-item active">
+                <span class="bottom-nav-icon">⚔️</span>
+                <span>RPG</span>
+            </a>
+            <a href="./setting.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">⚙️</span>
+                <span>設定</span>
+            </a>
+        </nav>
+
+
     </div>
     <script src="./script.js"></script>
 </body>

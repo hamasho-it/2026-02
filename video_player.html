@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>動画再生 - カグチカ！</title>
+    <title>選択された演目を表示 - カグチカ！</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="app-container">
         <header>
-            <a href="./video_list.html" class="header-back">戻る</a>
-            <h1>動画再生</h1>
+            <h1>選択された演目を表示</h1>
         </header>
         <main>
             <div class="img-box" style="height:220px; position:relative;">
@@ -19,14 +18,52 @@
             </div>
             <div class="card">
                 <div class="card-title">演目：大蛇（架空版）</div>
-                <p style="font-size:13px; color:#444;">社中：サンプル社中 | 公演日：202X年〇月〇日</p>
-                <p style="font-size:12px; color:#666; margin-top:6px;">石見神楽を代表する演目。退治される八岐大蛇の躍動感ある舞が最大のみどころです。</p>
+                <p style="font-size: 16px; color:#444;">社中：サンプル社中 | 公演日：202X年〇月〇日</p>
+                <p style="font-size: 16px; color:#666; margin-top:6px;">石見神楽を代表する演目。退治される八岐大蛇の躍動感ある舞が最大のみどころです。</p>
             </div>
             <div class="btn-group">
                 <a href="./video_list.html" class="btn btn-secondary">戻る</a>
             </div>
         </main>
         <footer>© カグチカ！ Project</footer>
+<!-- モンスト風下部ナビゲーションバー (親指操作・AI解説明記) -->
+        <nav class="bottom-nav">
+            
+            <a href="./index.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🏠</span>
+                <span>ホーム</span>
+            </a>
+            <a href="./seat_reservation.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎟️</span>
+                <span>座席予約</span>
+            </a>
+            <a href="./ai_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">💡</span>
+                <span>AI解説</span>
+            </a>
+            <a href="./video_list.html" class="bottom-nav-item active">
+                <span class="bottom-nav-icon">📺</span>
+                <span>動画</span>
+            </a>
+            <a href="./manga_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📖</span>
+                <span>漫画</span>
+            </a>
+            <a href="./gacha_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎰</span>
+                <span>ガチャ</span>
+            </a>
+            <a href="./rpg_top.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">⚔️</span>
+                <span>RPG</span>
+            </a>
+            <a href="./setting.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">⚙️</span>
+                <span>設定</span>
+            </a>
+        </nav>
+
+
     </div>
     <script src="./script.js"></script>
 </body>

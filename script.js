@@ -1,10 +1,9 @@
 // カグチカ！ 共通 JavaScript
 
 document.addEventListener("DOMContentLoaded", () => {
-    // 汎用ボタンクリックフィードバックやシミュレーション
     console.log("カグチカ！ アプリケーション動作中");
 
-    // 設定トグルのイベント
+    // 設定トグルの動作
     const toggles = document.querySelectorAll('.toggle-switch input');
     toggles.forEach(toggle => {
         toggle.addEventListener('change', (e) => {
@@ -31,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // RPG攻撃ボタン等のシミュレーション
+    // RPG攻撃ボタン等の動作演出
     const atkBtns = document.querySelectorAll('.rpg-action-btn');
     atkBtns.forEach(btn => {
         btn.addEventListener('click', () => {

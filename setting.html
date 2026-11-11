@@ -9,26 +9,21 @@
 <body>
     <div class="app-container">
         <header>
-            <a href="./index.html" class="header-back">戻る</a>
             <h1>設定</h1>
         </header>
         <main>
             <div class="card">
-                <div class="card-title">環境設定</div>
+                <div class="card-title">音量 (CV、BGM) / 文字の大きさ</div>
                 <div class="toggle-group">
-                    <span>演者1 Voice</span>
+                    <span>音量 (CV)</span>
                     <label class="toggle-switch"><input type="checkbox" checked><span class="slider"></span></label>
                 </div>
                 <div class="toggle-group">
-                    <span>演者2 Voice</span>
+                    <span>音量 (BGM)</span>
                     <label class="toggle-switch"><input type="checkbox" checked><span class="slider"></span></label>
                 </div>
                 <div class="toggle-group">
-                    <span>設定1 BGM</span>
-                    <label class="toggle-switch"><input type="checkbox" checked><span class="slider"></span></label>
-                </div>
-                <div class="toggle-group">
-                    <span>設定2 SE</span>
+                    <span>文字の大きさ (大)</span>
                     <label class="toggle-switch"><input type="checkbox"><span class="slider"></span></label>
                 </div>
             </div>
@@ -38,6 +33,44 @@
             </div>
         </main>
         <footer>© カグチカ！ Project</footer>
+<!-- モンスト風下部ナビゲーションバー (親指操作・AI解説明記) -->
+        <nav class="bottom-nav">
+            
+            <a href="./index.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🏠</span>
+                <span>ホーム</span>
+            </a>
+            <a href="./seat_reservation.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎟️</span>
+                <span>座席予約</span>
+            </a>
+            <a href="./ai_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">💡</span>
+                <span>AI解説</span>
+            </a>
+            <a href="./video_list.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📺</span>
+                <span>動画</span>
+            </a>
+            <a href="./manga_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📖</span>
+                <span>漫画</span>
+            </a>
+            <a href="./gacha_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎰</span>
+                <span>ガチャ</span>
+            </a>
+            <a href="./rpg_top.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">⚔️</span>
+                <span>RPG</span>
+            </a>
+            <a href="./setting.html" class="bottom-nav-item active">
+                <span class="bottom-nav-icon">⚙️</span>
+                <span>設定</span>
+            </a>
+        </nav>
+
+
     </div>
     <script src="./script.js"></script>
 </body>

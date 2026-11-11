@@ -3,33 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>カグチカ！ - エントリーページ</title>
+    <title>カグチカ！ - ホーム</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="app-container">
-        <header>
-            <h1>カグチカ！</h1>
+    <div class="app-container monst-home-container">
+        <!-- モンスト風ステータスバー (ヘッダー) -->
+        <header class="monst-header">
+            <div class="monst-status-row">
+                <div class="user-info">
+                    <span class="user-rank">Rank 150</span>
+                    <span class="user-name">神楽ファンA</span>
+                </div>
+                <div class="user-currency">
+                    <span class="currency-label">pt</span>
+                    <span class="currency-value">1,000</span>
+                </div>
+            </div>
+            <div class="stamina-bar-container">
+                <div class="stamina-text">STAMINA 120 / 120</div>
+                <div class="stamina-bar-fill" style="width: 100%;"></div>
+            </div>
         </header>
-        <main>
-            <div class="img-box">
-                <img src="./images/hero_banner.png" alt="カグチカ！ メインバナー">
+
+        <main class="monst-main">
+            <!-- 中央メインキャラクター表示エリア -->
+            <div class="monst-hero-stage">
+                <div class="hero-bg-glow"></div>
+                <div class="hero-character-card">
+                    <div class="hero-rarity">★★★★★★</div>
+                    <div class="hero-avatar">
+                        <!-- キャラクターアイコン/イラスト -->
+                        <div class="hero-avatar-inner">
+                            <span class="hero-emoji">⚔️</span>
+                        </div>
+                    </div>
+                    <div class="hero-details">
+                        <span class="hero-title">★6 勇猛なる神楽師 スサノオ</span>
+                        <div class="hero-badge-row">
+                            <span class="hero-badge luck-badge">🍀 運極 (99)</span>
+                            <span class="hero-badge element-badge">神格 Lv.MAX</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <div class="card-title">石見神楽を身近に楽しむポータル</div>
-                <p style="font-size: 13px; color: #555;">公演予約からリアルタイム解説、4コマ漫画、RPGまで！石見神楽のすべてがここに。</p>
-            </div>
-            <div class="btn-group">
-                <a href="./seat_reservation.html" class="btn">座席予約</a>
-                <a href="./ai_select.html" class="btn">AI解説</a>
-                <a href="./video_list.html" class="btn">動画</a>
-                <a href="./manga_select.html" class="btn">四コマ漫画</a>
-                <a href="./gacha_select.html" class="btn">ガチャ</a>
-                <a href="./rpg_top.html" class="btn">RPG</a>
-                <a href="./setting.html" class="btn btn-secondary">設定</a>
+
+            <!-- メイン機能ボタン (片手親指位置) -->
+            <div class="btn-group monst-btn-group">
+                <div class="btn-row">
+                    <a href="./seat_reservation.html" class="btn">🎟️ 座席予約</a>
+                    <a href="./ai_select.html" class="btn">💡 AI解説</a>
+                </div>
+                <div class="btn-row">
+                    <a href="./video_list.html" class="btn">📺 動画</a>
+                    <a href="./manga_select.html" class="btn">📖 漫画</a>
+                </div>
+                <div class="btn-row">
+                    <a href="./gacha_select.html" class="btn">🎰 ガチャ</a>
+                    <a href="./rpg_top.html" class="btn">⚔️ RPG</a>
+                </div>
             </div>
         </main>
+
         <footer>© カグチカ！ Project</footer>
+
+        <!-- モンスト風下部ナビゲーションバー (8項目固定) -->
+        <nav class="bottom-nav">
+            <a href="./index.html" class="bottom-nav-item active">
+                <span class="bottom-nav-icon">🏠</span>
+                <span>ホーム</span>
+            </a>
+            <a href="./seat_reservation.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎟️</span>
+                <span>座席予約</span>
+            </a>
+            <a href="./ai_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">💡</span>
+                <span>AI解説</span>
+            </a>
+            <a href="./video_list.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📺</span>
+                <span>動画</span>
+            </a>
+            <a href="./manga_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📖</span>
+                <span>漫画</span>
+            </a>
+            <a href="./gacha_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎰</span>
+                <span>ガチャ</span>
+            </a>
+            <a href="./rpg_top.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">⚔️</span>
+                <span>RPG</span>
+            </a>
+            <a href="./setting.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">⚙️</span>
+                <span>設定</span>
+            </a>
+        </nav>
     </div>
     <script src="./script.js"></script>
 </body>

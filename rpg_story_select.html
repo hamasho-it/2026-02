@@ -9,12 +9,11 @@
 <body>
     <div class="app-container">
         <header>
-            <a href="./rpg_top.html" class="header-back">戻る</a>
-            <h1>演目ストーリー選択</h1>
+            <h1>ストーリー（演目）選択</h1>
         </header>
         <main>
             <div class="form-group">
-                <label>挑戦する演目（ストーリー）</label>
+                <label>ストーリー（演目）を選ぶ</label>
                 <select class="form-control">
                     <option>第1章：大蛇退治（演目：大蛇）</option>
                     <option>第2章：神剣の閃光（演目：神剣）</option>
@@ -22,14 +21,52 @@
             </div>
             <div class="card">
                 <div class="card-title">ストーリー概要</div>
-                <p style="font-size:12px; color:#666;">村を荒らす八岐大蛇を退治するため、剣を携えて旅立つ素戔嗚尊の追体験ストーリー。</p>
+                <p style="font-size: 16px; color:#666;">村を荒らす八岐大蛇を退治するため、剣を携えて旅立つ素戔嗚尊の追体験ストーリー。</p>
             </div>
-            <div class="btn-group" style="margin-top:16px;">
+            <div class="btn-group">
                 <a href="./rpg_battle.html" class="btn">攻略開始！！</a>
                 <a href="./rpg_top.html" class="btn btn-outline">戻る</a>
             </div>
         </main>
         <footer>© カグチカ！ Project</footer>
+<!-- モンスト風下部ナビゲーションバー (親指操作・AI解説明記) -->
+        <nav class="bottom-nav">
+            
+            <a href="./index.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🏠</span>
+                <span>ホーム</span>
+            </a>
+            <a href="./seat_reservation.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎟️</span>
+                <span>座席予約</span>
+            </a>
+            <a href="./ai_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">💡</span>
+                <span>AI解説</span>
+            </a>
+            <a href="./video_list.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📺</span>
+                <span>動画</span>
+            </a>
+            <a href="./manga_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📖</span>
+                <span>漫画</span>
+            </a>
+            <a href="./gacha_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎰</span>
+                <span>ガチャ</span>
+            </a>
+            <a href="./rpg_top.html" class="bottom-nav-item active">
+                <span class="bottom-nav-icon">⚔️</span>
+                <span>RPG</span>
+            </a>
+            <a href="./setting.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">⚙️</span>
+                <span>設定</span>
+            </a>
+        </nav>
+
+
     </div>
     <script src="./script.js"></script>
 </body>

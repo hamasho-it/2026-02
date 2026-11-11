@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI解説 演目・社中選択 - カグチカ！</title>
+    <title>AI解説演目・社中選択 - カグチカ！</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="app-container">
         <header>
-            <a href="./index.html" class="header-back">戻る</a>
-            <h1>AI解説 演目・社中選択</h1>
+            <h1>AI解説演目・社中選択</h1>
         </header>
         <main>
             <div class="card">
                 <div class="card-title">リアルタイム解説機能</div>
-                <p style="font-size:12px; color:#666;">カメラをステージにかざすと、AIが現在演じられている場面や登場人物をリアルタイムで音声・テキスト解説します。</p>
+                <p style="font-size: 16px; color:#666;">カメラをステージにかざすと、AIが現在演じられている場面や登場人物をリアルタイムで音声・テキスト解説します。</p>
             </div>
             <div class="form-group">
                 <label>観賞する演目</label>
@@ -32,12 +31,50 @@
                     <option>神楽社中A</option>
                 </select>
             </div>
-            <div class="btn-group" style="margin-top:20px;">
+            <div class="btn-group">
                 <a href="./ai_camera.html" class="btn">選ぶ</a>
                 <a href="./index.html" class="btn btn-outline">戻る</a>
             </div>
         </main>
         <footer>© カグチカ！ Project</footer>
+<!-- モンスト風下部ナビゲーションバー (親指操作・AI解説明記) -->
+        <nav class="bottom-nav">
+            
+            <a href="./index.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🏠</span>
+                <span>ホーム</span>
+            </a>
+            <a href="./seat_reservation.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎟️</span>
+                <span>座席予約</span>
+            </a>
+            <a href="./ai_select.html" class="bottom-nav-item active">
+                <span class="bottom-nav-icon">💡</span>
+                <span>AI解説</span>
+            </a>
+            <a href="./video_list.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📺</span>
+                <span>動画</span>
+            </a>
+            <a href="./manga_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📖</span>
+                <span>漫画</span>
+            </a>
+            <a href="./gacha_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎰</span>
+                <span>ガチャ</span>
+            </a>
+            <a href="./rpg_top.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">⚔️</span>
+                <span>RPG</span>
+            </a>
+            <a href="./setting.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">⚙️</span>
+                <span>設定</span>
+            </a>
+        </nav>
+
+
     </div>
     <script src="./script.js"></script>
 </body>

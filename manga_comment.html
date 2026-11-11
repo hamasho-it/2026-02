@@ -9,33 +9,70 @@
 <body>
     <div class="app-container">
         <header>
-            <a href="./manga_select.html" class="header-back">戻る</a>
             <h1>コメント・評価</h1>
         </header>
         <main>
             <div class="card">
-                <div class="card-title">作品評価</div>
-                <div style="font-size:18px; color:#333;">★★★★★ <span style="font-size:13px; color:#666;">(5.0 / 評点32件)</span></div>
+                <div class="card-title">閲覧、書き込み</div>
+                <div style="font-size:18px; color:#333;">★★★★★ <span style="font-size: 16px; color:#666;">(5.0 / 評点32件)</span></div>
             </div>
             <form id="comment-form">
                 <div class="form-group">
-                    <label>コメントを投稿</label>
+                    <label>コメントを書く</label>
                     <input type="text" id="comment-input" class="form-control" placeholder="感想を入力してください">
                 </div>
-                <button type="submit" class="btn" style="margin-bottom:12px;">書き込む</button>
+                <button type="submit" class="btn" style="margin-bottom:12px;">コメントを書く</button>
             </form>
-            <div class="card-title">みんなのコメント</div>
+            <div class="card-title">コメント一覧</div>
             <div id="comment-list">
                 <div class="card" style="margin-bottom:8px;">
                     <strong>神楽ファンA</strong> <span style="font-size:11px; color:#888;">202X-XX-XX</span>
-                    <p style="font-size:13px; margin-top:4px;">大蛇の演目が楽しみです！マンガで予習できてわかりやすい！</p>
+                    <p style="font-size: 16px; margin-top:4px;">大蛇の演目が楽しみです！マンガで予習できてわかりやすい！</p>
                 </div>
             </div>
-            <div class="btn-group" style="margin-top:10px;">
+            <div class="btn-group">
                 <a href="./manga_select.html" class="btn btn-secondary">選択画面に戻る</a>
             </div>
         </main>
         <footer>© カグチカ！ Project</footer>
+<!-- モンスト風下部ナビゲーションバー (親指操作・AI解説明記) -->
+        <nav class="bottom-nav">
+            
+            <a href="./index.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🏠</span>
+                <span>ホーム</span>
+            </a>
+            <a href="./seat_reservation.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎟️</span>
+                <span>座席予約</span>
+            </a>
+            <a href="./ai_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">💡</span>
+                <span>AI解説</span>
+            </a>
+            <a href="./video_list.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📺</span>
+                <span>動画</span>
+            </a>
+            <a href="./manga_select.html" class="bottom-nav-item active">
+                <span class="bottom-nav-icon">📖</span>
+                <span>漫画</span>
+            </a>
+            <a href="./gacha_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎰</span>
+                <span>ガチャ</span>
+            </a>
+            <a href="./rpg_top.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">⚔️</span>
+                <span>RPG</span>
+            </a>
+            <a href="./setting.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">⚙️</span>
+                <span>設定</span>
+            </a>
+        </nav>
+
+
     </div>
     <script src="./script.js"></script>
 </body>

@@ -9,12 +9,14 @@
 <body>
     <div class="app-container">
         <header>
-            <a href="./gacha_select.html" class="header-back">戻る</a>
             <h1>ガチャ画面</h1>
         </header>
         <main>
-            <div class="img-box" style="height:260px;">
-                <img src="./images/gacha_chara_01.png" alt="ガチャ背景">
+            <div class="card" style="text-align:center;">
+                <p style="font-size: 16px; font-weight:bold; margin-bottom:8px;">ガチャ出現確率</p>
+                <div class="img-box" style="height:220px;">
+                    <img src="./images/gacha_chara_01.png" alt="ガチャ背景">
+                </div>
             </div>
             <div class="btn-group">
                 <a href="./gacha_result.html" class="btn">引く</a>
@@ -23,6 +25,44 @@
             </div>
         </main>
         <footer>© カグチカ！ Project</footer>
+<!-- モンスト風下部ナビゲーションバー (親指操作・AI解説明記) -->
+        <nav class="bottom-nav">
+            
+            <a href="./index.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🏠</span>
+                <span>ホーム</span>
+            </a>
+            <a href="./seat_reservation.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎟️</span>
+                <span>座席予約</span>
+            </a>
+            <a href="./ai_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">💡</span>
+                <span>AI解説</span>
+            </a>
+            <a href="./video_list.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📺</span>
+                <span>動画</span>
+            </a>
+            <a href="./manga_select.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📖</span>
+                <span>漫画</span>
+            </a>
+            <a href="./gacha_select.html" class="bottom-nav-item active">
+                <span class="bottom-nav-icon">🎰</span>
+                <span>ガチャ</span>
+            </a>
+            <a href="./rpg_top.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">⚔️</span>
+                <span>RPG</span>
+            </a>
+            <a href="./setting.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">⚙️</span>
+                <span>設定</span>
+            </a>
+        </nav>
+
+
     </div>
     <script src="./script.js"></script>
 </body>
